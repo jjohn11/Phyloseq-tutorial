@@ -20,4 +20,3 @@ library(ggplot2); packageVersion("ggplot2")
 </code>
 > [1] ‘3.4.4’
 
-
