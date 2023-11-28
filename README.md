@@ -106,6 +106,41 @@ plot_ordination(GlobalPatterns, GP.ord, type="Family", title="Family")
 ![image](https://github.com/jjohn11/Phyloseq-tutorial/assets/148915446/2bd97e03-5f6c-48fc-a4e2-af82a0725af2)
 
 
+## Plot Alpha Diversity 
+The plot_richness function is used to create richness plots, which visualize alpha diversity measures across samples.
+
+<code>
+#Specifying a measures argument Simpson and Fisher, which will include just the alpha-diversity measures that we want.
+#Specifying a sample variable (SampleType and Human) on which to group/organize samples along the horizontal (x) axis
+plot_richness(GlobalPatterns, x="human", color="SampleType", measures=c("Simpson", "Fisher"))
+</code>  
+
+![image](https://github.com/jjohn11/Phyloseq-tutorial/assets/148915446/d105a87c-4b9a-4deb-aded-24073fa6b976)
+
+## Bar Plots
+Bar plots generate insightful visual summaries depicting variations in taxa abundance among samples within an experiment. Depending on the parameters you choose to separate the data, it will result in more in depth look comparing between specific variables
+
+<code>
+#Using subset_taxa to focus on specific phylum, this particular phylum is small to be visually informative
+GP.Chlam = subset_taxa(GlobalPatterns, Phylum == "Chlamydiae")
+#Using color to assign the Genus which the OTU belongs to
+plot_bar(GP.Chlam, x="SampleType", fill="Genus")
+</code>
+
+![image](https://github.com/jjohn11/Phyloseq-tutorial/assets/148915446/c2b2bf31-62ec-4a6d-9919-387df24aa23f)
+
+## Heat Map
+plot_heatmap creates a heat map which can be used to observe the patterns of high-abundance OTUs in the context of a matrix with lower abundance OTUs in all samples
+
+<code>
+#Using subset_taxa to create a new phyloseq object to focus on specific phylum, this particular phylum is small to be visually informative
+GP.heat <- subset_taxa(GlobalPatterns, Phylum =="Crenarchaeota")
+# plotting new phyloseq object, using low and high parameters to assign colors for low abundance and high abundance
+plot_heatmap(GP.heat,low="#000033", high="#66CCFF")
+</code>
+
+![image](https://github.com/jjohn11/Phyloseq-tutorial/assets/148915446/29898178-f3cc-455c-a704-6ba1ea908a09)
+
 
 
 
