@@ -37,6 +37,8 @@ GlobalPatterns = phyloseq(OTU, TAX, sample_metadata)
 </code>
 
 ## Using Accessors
+Accessors are are functions that allow you to retrieve specific components or information from a phyloseq-class object. They are able to provide helpful information about microbial data.
+The following are a few examples of accessors that can be used.
 <code>
 #Provides the number of taxa in the data set
 ntaxa(GlobalPatterns)
@@ -75,6 +77,20 @@ sample_variables(GlobalPatterns)
 > [7] "Description" 
 </code>
 
-##Using Processors
+## Using Processors
+Processors are functions used to manipulate and alter the phyloseq object. These functions include the ability to do filtering, subsetting, and merging abundance data.
+The following are a couple of functions that can be used to filter or subset the microbial data within a phyloseq-class object.
+
+<code>
+#This creates a new phyloseq object identical to the original and modifies it to remove any sample with less than 100000 reads
+GP.prune = GlobalPatterns
+GP.prune = prune_samples(sample_sums(GlobalPatterns)>=100000, GP.prune)
+nsamples(GlobalPatterns)
+>[1] 26 
+nsamples(GP.prune)
+>[1] 25
+#1 sample was removed from the object
+</code>
+
 
 
