@@ -7,11 +7,10 @@ The first thing is to install the Biocmanager package:
 install.packages("BiocManager")
 </code>
 
-Once that is installed, the next thing to do is to load the 'phyloseq' package
+Once that is installed, the next thing to do is to load the 'phyloseq' and 'ggplot2' package
 <code>
 BiocManager::install("phyloseq")
 library(phyloseq); packageVersion("phyloseq")
 </code>
-
 > [1] ‘1.46.0’
 
