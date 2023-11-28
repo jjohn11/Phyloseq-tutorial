@@ -93,4 +93,19 @@ nsamples(GP.prune)
 </code>
 
 
+## Ordination Plots
+Ordination is often employed to explore and represent the relationships between samples based on their composition or other characteristics. Use ordinate() function to create ordination class. In the function you will specify the Phyloseq class, the statistical analysis you want, and the name of a supported distance method. 
+
+<code>
+#Plot ordination
+GP.ord <- ordinate(GlobalPatterns, "NMDS", "bray")
+#Plots the OTUs by Family
+plot_ordination(GlobalPatterns, GP.ord, type="Family", title="Family")
+</code>
+
+![image](https://github.com/jjohn11/Phyloseq-tutorial/assets/148915446/2bd97e03-5f6c-48fc-a4e2-af82a0725af2)
+
+
+
+
 
