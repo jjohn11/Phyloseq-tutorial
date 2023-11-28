@@ -28,6 +28,13 @@ however, this is how it would look like forming the phyloseq with an OTU matrix,
 GlobalPatterns = phyloseq(OTU, TAX, sample_metadata)
 </code>
 
+To add the example data to the R environment use:
+
+<code>
+data(GlobalPatterns)
+</code>
+
+
 <code>
 > phyloseq-class experiment-level object
 > otu_table()   OTU Table:         [ 19216 taxa and 26 samples ] <br>
