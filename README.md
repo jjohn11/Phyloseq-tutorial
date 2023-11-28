@@ -29,10 +29,13 @@ GlobalPatterns = phyloseq(OTU, TAX, sample_metadata)
 </code>
 
 > phyloseq-class experiment-level object
-> otu_table()   OTU Table:         [ 19216 taxa and 26 samples ]
-> sample_data() Sample Data:       [ 26 samples by 7 sample variables ]
-> tax_table()   Taxonomy Table:    [ 19216 taxa by 7 taxonomic ranks ]
-> phy_tree()    Phylogenetic Tree: [ 19216 tips and 19215 internal nodes ]
+> otu_table()   OTU Table:         [ 19216 taxa and 26 samples ] <br>
+> sample_data() Sample Data:       [ 26 samples by 7 sample variables ] <br>
+> tax_table()   Taxonomy Table:    [ 19216 taxa by 7 taxonomic ranks ] <br>
+> phy_tree()    Phylogenetic Tree: [ 19216 tips and 19215 internal nodes ] <br>
+
+
+
 
 
 
