@@ -13,6 +13,5 @@ BiocManager::install("phyloseq")
 library(phyloseq); packageVersion("phyloseq")
 </code>
 
-{
-[1] ‘1.46.0’
-}
+> [1] ‘1.46.0’
+
