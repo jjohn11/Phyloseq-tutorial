@@ -22,9 +22,9 @@ library(ggplot2); packageVersion("ggplot2")
 > [1] ‘3.4.4’
 
 ## Add Example Files to R environmnt
-The example data being used is the phyloseq class provided by the package
+The example data being used is the phyloseq class is provided by the package; 
+however, this is how it would look like forming the phyloseq with an OTU matrix, taxonomy table, and sample metadata table.
 <code>
-#Example of how forming the phyloseq class would look like
 GlobalPatterns = phyloseq(OTU, TAX, sample_metadata)
 </code>
 
