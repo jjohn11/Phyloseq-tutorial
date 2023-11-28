@@ -34,6 +34,7 @@ To add the example data to the R environment use:
 data(GlobalPatterns)
 </code>
 
+The phyloseq object should present as:
 
 <code>
 > phyloseq-class experiment-level object
