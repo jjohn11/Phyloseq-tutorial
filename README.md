@@ -13,6 +13,7 @@ BiocManager::install("phyloseq")
 library(phyloseq); packageVersion("phyloseq")
 </code>
 > [1] ‘1.46.0’
+
 <code>
 BiocManager::install("ggplot2")
 library(ggplot2); packageVersion("ggplot2")
